@@ -58,6 +58,7 @@ class BrandResource extends Resource
                         ]),
                     FileUpload::make('image')
                         ->image()
+                        ->required()
                         ->directory('brands'),
 
                     Toggle::make('is_active')
