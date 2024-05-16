@@ -57,7 +57,6 @@ class OrderResource extends Resource
 
                         Select::make('payment_method')
                             ->options([
-                                'gcash' => 'Gcash',
                                 'card' => 'Credit Card',
                                 'cod' => 'Cash on Delivery'
                             ])
